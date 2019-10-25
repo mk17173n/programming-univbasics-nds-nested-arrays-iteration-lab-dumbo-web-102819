@@ -8,7 +8,7 @@ def join_ingredients(src)
   # As such, there should be a new String for each inner array, or pair
   
   output = []
-  src.map( |pair| output << "I love #{pair[0]} and #{pair[1]} on my pizza" )
+  src.map { |pair| output << "I love #{pair[0]} and #{pair[1]} on my pizza" }
   output
   
 end
