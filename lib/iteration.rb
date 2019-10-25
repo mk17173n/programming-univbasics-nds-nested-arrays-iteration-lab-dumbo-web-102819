@@ -20,8 +20,12 @@ def find_greater_pair(src)
   
   output = []
   src.each do |pair|
-    
-  
+    if pair[0] > pair[1]
+      output << pair[0]
+    else
+      output << pair[1]
+    end
+  output
 end
 
 def total_even_pairs(src)
