@@ -40,8 +40,9 @@ def total_even_pairs(src)
   
   output = 0
   src.each do |pair|
-    if pair[0] > pair[1]
-      output << pair[0]
+    if pair[0] % 2 == 0 && pair[1] % 2 == 0
+      output += pair[0]
+      output += pair[1]
     else
       output << pair[1]
     end
