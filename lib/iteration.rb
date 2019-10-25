@@ -25,6 +25,7 @@ def find_greater_pair(src)
     else
       output << pair[1]
     end
+  end
   output
 end
 
