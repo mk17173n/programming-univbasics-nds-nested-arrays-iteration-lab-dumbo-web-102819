@@ -19,7 +19,7 @@ def find_greater_pair(src)
   # that are in the inner Arrays
   
   output = []
-  src.map do |pair|
+  src.each do |pair|
     if pair[0] > pair[1]
       output << pair[0]
     else
